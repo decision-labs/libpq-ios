@@ -7,61 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BA502A3138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
-		4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
 		4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq-ios.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
 		4BA502BF138A58BD00F2653C /* libpq_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502BE138A58BD00F2653C /* libpq_iosTests.m */; };
-		4BA502E0138A599600F2653C /* pqsignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502CE138A599600F2653C /* pqsignal.h */; };
-		4BA502E1138A599600F2653C /* pqexpbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502CF138A599600F2653C /* pqexpbuffer.h */; };
-		4BA502E2138A599600F2653C /* libpq-int.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502D0138A599600F2653C /* libpq-int.h */; };
-		4BA502E3138A599600F2653C /* libpq-fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502D1138A599600F2653C /* libpq-fe.h */; };
-		4BA502E4138A599600F2653C /* libpq-events.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502D2138A599600F2653C /* libpq-events.h */; };
-		4BA502E5138A599600F2653C /* fe-auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502D3138A599600F2653C /* fe-auth.h */; };
-		4BA502E6138A599600F2653C /* pqsignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502D4138A599600F2653C /* pqsignal.c */; };
-		4BA502E7138A599600F2653C /* pqexpbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502D5138A599600F2653C /* pqexpbuffer.c */; };
-		4BA502E8138A599600F2653C /* libpq-events.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502D6138A599600F2653C /* libpq-events.c */; };
-		4BA502E9138A599600F2653C /* fe-secure.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502D7138A599600F2653C /* fe-secure.c */; };
-		4BA502EA138A599600F2653C /* fe-protocol3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502D8138A599600F2653C /* fe-protocol3.c */; };
-		4BA502EB138A599600F2653C /* fe-protocol2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502D9138A599600F2653C /* fe-protocol2.c */; };
-		4BA502EC138A599600F2653C /* fe-print.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502DA138A599600F2653C /* fe-print.c */; };
-		4BA502ED138A599600F2653C /* fe-misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502DB138A599600F2653C /* fe-misc.c */; };
-		4BA502EE138A599600F2653C /* fe-lobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502DC138A599600F2653C /* fe-lobj.c */; };
-		4BA502EF138A599600F2653C /* fe-exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502DD138A599600F2653C /* fe-exec.c */; };
-		4BA502F0138A599600F2653C /* fe-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502DE138A599600F2653C /* fe-connect.c */; };
-		4BA502F1138A599600F2653C /* fe-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502DF138A599600F2653C /* fe-auth.c */; };
-		4BA50309138A5E9800F2653C /* auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F3138A5E9700F2653C /* auth.h */; };
-		4BA5030A138A5E9800F2653C /* be-fsstubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F4138A5E9700F2653C /* be-fsstubs.h */; };
-		4BA5030B138A5E9800F2653C /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F5138A5E9700F2653C /* crypt.h */; };
-		4BA5030C138A5E9800F2653C /* hba.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F6138A5E9700F2653C /* hba.h */; };
-		4BA5030D138A5E9800F2653C /* ip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F7138A5E9700F2653C /* ip.h */; };
-		4BA5030E138A5E9800F2653C /* libpq-be.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F8138A5E9700F2653C /* libpq-be.h */; };
-		4BA5030F138A5E9800F2653C /* libpq-fs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502F9138A5E9700F2653C /* libpq-fs.h */; };
-		4BA50310138A5E9800F2653C /* libpq.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502FA138A5E9700F2653C /* libpq.h */; };
-		4BA50311138A5E9800F2653C /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502FB138A5E9700F2653C /* md5.h */; };
-		4BA50312138A5E9800F2653C /* pqcomm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502FC138A5E9700F2653C /* pqcomm.h */; };
-		4BA50313138A5E9800F2653C /* pqformat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502FD138A5E9700F2653C /* pqformat.h */; };
-		4BA50314138A5E9800F2653C /* pqsignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502FE138A5E9700F2653C /* pqsignal.h */; };
-		4BA50315138A5E9800F2653C /* getaddrinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA502FF138A5E9700F2653C /* getaddrinfo.h */; };
-		4BA50316138A5E9800F2653C /* port.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50300138A5E9700F2653C /* port.h */; };
-		4BA50317138A5E9800F2653C /* postgres_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50301138A5E9700F2653C /* postgres_ext.h */; };
-		4BA50318138A5E9800F2653C /* pg_config_os.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50302138A5E9800F2653C /* pg_config_os.h */; };
-		4BA50319138A5E9800F2653C /* pg_config_manual.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50303138A5E9800F2653C /* pg_config_manual.h */; };
-		4BA5031A138A5E9800F2653C /* pg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50304138A5E9800F2653C /* pg_config.h */; };
-		4BA5031B138A5E9800F2653C /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50305138A5E9800F2653C /* c.h */; };
-		4BA5031C138A5E9800F2653C /* postgres_fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50306138A5E9800F2653C /* postgres_fe.h */; };
-		4BA5031D138A5E9800F2653C /* pg_wchar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50308138A5E9800F2653C /* pg_wchar.h */; };
-		4BA5031F138A61A600F2653C /* pg_config_paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA5031E138A61A600F2653C /* pg_config_paths.h */; };
-		4BB312D8138A890900692052 /* pgstrcasecmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312D5138A890800692052 /* pgstrcasecmp.c */; };
-		4BB312D9138A890900692052 /* noblock.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312D6138A890800692052 /* noblock.c */; };
-		4BB312DA138A890900692052 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312D7138A890800692052 /* md5.c */; };
-		4BB312E1138A891A00692052 /* wchar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DB138A891A00692052 /* wchar.c */; };
-		4BB312E2138A891A00692052 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DC138A891A00692052 /* thread.c */; };
-		4BB312E3138A891A00692052 /* ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DD138A891A00692052 /* ip.c */; };
-		4BB312E4138A891A00692052 /* inet_net_ntop.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DE138A891A00692052 /* inet_net_ntop.c */; };
-		4BB312E5138A891A00692052 /* encnames.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DF138A891A00692052 /* encnames.c */; };
-		4BB312E6138A891A00692052 /* chklocale.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312E0138A891A00692052 /* chklocale.c */; };
+		4BB31305138AA0E500692052 /* chklocale.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312E9138AA0E500692052 /* chklocale.c */; };
+		4BB31306138AA0E500692052 /* encnames.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312EA138AA0E500692052 /* encnames.c */; };
+		4BB31307138AA0E500692052 /* fe-auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312EB138AA0E500692052 /* fe-auth.c */; };
+		4BB31308138AA0E500692052 /* fe-auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB312EC138AA0E500692052 /* fe-auth.h */; };
+		4BB31309138AA0E500692052 /* fe-connect.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312ED138AA0E500692052 /* fe-connect.c */; };
+		4BB3130A138AA0E500692052 /* fe-exec.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312EE138AA0E500692052 /* fe-exec.c */; };
+		4BB3130B138AA0E500692052 /* fe-lobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312EF138AA0E500692052 /* fe-lobj.c */; };
+		4BB3130C138AA0E500692052 /* fe-misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F0138AA0E500692052 /* fe-misc.c */; };
+		4BB3130D138AA0E500692052 /* fe-print.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F1138AA0E500692052 /* fe-print.c */; };
+		4BB3130E138AA0E500692052 /* fe-protocol2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F2138AA0E500692052 /* fe-protocol2.c */; };
+		4BB3130F138AA0E500692052 /* fe-protocol3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F3138AA0E500692052 /* fe-protocol3.c */; };
+		4BB31310138AA0E500692052 /* fe-secure.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F4138AA0E500692052 /* fe-secure.c */; };
+		4BB31311138AA0E500692052 /* inet_net_ntop.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F5138AA0E500692052 /* inet_net_ntop.c */; };
+		4BB31312138AA0E500692052 /* ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F6138AA0E500692052 /* ip.c */; };
+		4BB31313138AA0E500692052 /* libpq-events.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312F7138AA0E500692052 /* libpq-events.c */; };
+		4BB31314138AA0E500692052 /* libpq-events.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F8138AA0E500692052 /* libpq-events.h */; };
+		4BB31315138AA0E500692052 /* libpq-fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F9138AA0E500692052 /* libpq-fe.h */; };
+		4BB31316138AA0E500692052 /* libpq-int.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB312FA138AA0E500692052 /* libpq-int.h */; };
+		4BB31318138AA0E500692052 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312FC138AA0E500692052 /* md5.c */; };
+		4BB31319138AA0E500692052 /* noblock.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312FD138AA0E500692052 /* noblock.c */; };
+		4BB3131A138AA0E500692052 /* pgstrcasecmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312FE138AA0E500692052 /* pgstrcasecmp.c */; };
+		4BB3131B138AA0E500692052 /* pqexpbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312FF138AA0E500692052 /* pqexpbuffer.c */; };
+		4BB3131C138AA0E500692052 /* pqexpbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31300138AA0E500692052 /* pqexpbuffer.h */; };
+		4BB3131D138AA0E500692052 /* pqsignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB31301138AA0E500692052 /* pqsignal.c */; };
+		4BB3131E138AA0E500692052 /* pqsignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31302138AA0E500692052 /* pqsignal.h */; };
+		4BB3131F138AA0E500692052 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB31303138AA0E500692052 /* thread.c */; };
+		4BB31320138AA0E500692052 /* wchar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB31304138AA0E500692052 /* wchar.c */; };
+		4BB3133A138AA16A00692052 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31322138AA16A00692052 /* c.h */; };
+		4BB3133B138AA16A00692052 /* getaddrinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31323138AA16A00692052 /* getaddrinfo.h */; };
+		4BB3133C138AA16A00692052 /* auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31325138AA16A00692052 /* auth.h */; };
+		4BB3133D138AA16A00692052 /* be-fsstubs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31326138AA16A00692052 /* be-fsstubs.h */; };
+		4BB3133E138AA16A00692052 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31327138AA16A00692052 /* crypt.h */; };
+		4BB3133F138AA16A00692052 /* hba.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31328138AA16A00692052 /* hba.h */; };
+		4BB31340138AA16A00692052 /* ip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31329138AA16A00692052 /* ip.h */; };
+		4BB31341138AA16A00692052 /* libpq-be.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132A138AA16A00692052 /* libpq-be.h */; };
+		4BB31342138AA16A00692052 /* libpq-fs.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132B138AA16A00692052 /* libpq-fs.h */; };
+		4BB31343138AA16A00692052 /* libpq.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132C138AA16A00692052 /* libpq.h */; };
+		4BB31344138AA16A00692052 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132D138AA16A00692052 /* md5.h */; };
+		4BB31345138AA16A00692052 /* pqcomm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132E138AA16A00692052 /* pqcomm.h */; };
+		4BB31346138AA16A00692052 /* pqformat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132F138AA16A00692052 /* pqformat.h */; };
+		4BB31347138AA16A00692052 /* pqsignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31330138AA16A00692052 /* pqsignal.h */; };
+		4BB31348138AA16A00692052 /* libpq-ios-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31331138AA16A00692052 /* libpq-ios-Prefix.pch */; };
+		4BB31349138AA16A00692052 /* pg_wchar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31333138AA16A00692052 /* pg_wchar.h */; };
+		4BB3134A138AA16A00692052 /* pg_config_manual.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31334138AA16A00692052 /* pg_config_manual.h */; };
+		4BB3134B138AA16A00692052 /* pg_config_os.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31335138AA16A00692052 /* pg_config_os.h */; };
+		4BB3134C138AA16A00692052 /* pg_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31336138AA16A00692052 /* pg_config.h */; };
+		4BB3134D138AA16A00692052 /* port.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31337138AA16A00692052 /* port.h */; };
+		4BB3134E138AA16A00692052 /* postgres_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31338138AA16A00692052 /* postgres_ext.h */; };
+		4BB3134F138AA16A00692052 /* postgres_fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31339138AA16A00692052 /* postgres_fe.h */; };
+		4BB31352138AA18800692052 /* pg_config_paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31351138AA18800692052 /* pg_config_paths.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,63 +75,62 @@
 
 /* Begin PBXFileReference section */
 		4BA5029F138A58BD00F2653C /* libpq-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpq-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BA502A2138A58BD00F2653C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4BA502A6138A58BD00F2653C /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpq-ios-Prefix.pch"; sourceTree = "<group>"; };
 		4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libpq-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA502B7138A58BD00F2653C /* libpq-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libpq-iosTests-Info.plist"; sourceTree = "<group>"; };
 		4BA502B9138A58BD00F2653C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BA502BB138A58BD00F2653C /* libpq-iosTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpq-iosTests-Prefix.pch"; sourceTree = "<group>"; };
 		4BA502BC138A58BD00F2653C /* libpq_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libpq_iosTests.h; sourceTree = "<group>"; };
 		4BA502BE138A58BD00F2653C /* libpq_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libpq_iosTests.m; sourceTree = "<group>"; };
-		4BA502CE138A599600F2653C /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqsignal.h; sourceTree = "<group>"; };
-		4BA502CF138A599600F2653C /* pqexpbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqexpbuffer.h; sourceTree = "<group>"; };
-		4BA502D0138A599600F2653C /* libpq-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-int.h"; sourceTree = "<group>"; };
-		4BA502D1138A599600F2653C /* libpq-fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-fe.h"; sourceTree = "<group>"; };
-		4BA502D2138A599600F2653C /* libpq-events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-events.h"; sourceTree = "<group>"; };
-		4BA502D3138A599600F2653C /* fe-auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fe-auth.h"; sourceTree = "<group>"; };
-		4BA502D4138A599600F2653C /* pqsignal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pqsignal.c; sourceTree = "<group>"; };
-		4BA502D5138A599600F2653C /* pqexpbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pqexpbuffer.c; sourceTree = "<group>"; };
-		4BA502D6138A599600F2653C /* libpq-events.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "libpq-events.c"; sourceTree = "<group>"; };
-		4BA502D7138A599600F2653C /* fe-secure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-secure.c"; sourceTree = "<group>"; };
-		4BA502D8138A599600F2653C /* fe-protocol3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-protocol3.c"; sourceTree = "<group>"; };
-		4BA502D9138A599600F2653C /* fe-protocol2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-protocol2.c"; sourceTree = "<group>"; };
-		4BA502DA138A599600F2653C /* fe-print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-print.c"; sourceTree = "<group>"; };
-		4BA502DB138A599600F2653C /* fe-misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-misc.c"; sourceTree = "<group>"; };
-		4BA502DC138A599600F2653C /* fe-lobj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-lobj.c"; sourceTree = "<group>"; };
-		4BA502DD138A599600F2653C /* fe-exec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-exec.c"; sourceTree = "<group>"; };
-		4BA502DE138A599600F2653C /* fe-connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-connect.c"; sourceTree = "<group>"; };
-		4BA502DF138A599600F2653C /* fe-auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "fe-auth.c"; sourceTree = "<group>"; };
-		4BA502F3138A5E9700F2653C /* auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
-		4BA502F4138A5E9700F2653C /* be-fsstubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "be-fsstubs.h"; sourceTree = "<group>"; };
-		4BA502F5138A5E9700F2653C /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		4BA502F6138A5E9700F2653C /* hba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hba.h; sourceTree = "<group>"; };
-		4BA502F7138A5E9700F2653C /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
-		4BA502F8138A5E9700F2653C /* libpq-be.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-be.h"; sourceTree = "<group>"; };
-		4BA502F9138A5E9700F2653C /* libpq-fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-fs.h"; sourceTree = "<group>"; };
-		4BA502FA138A5E9700F2653C /* libpq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libpq.h; sourceTree = "<group>"; };
-		4BA502FB138A5E9700F2653C /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		4BA502FC138A5E9700F2653C /* pqcomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqcomm.h; sourceTree = "<group>"; };
-		4BA502FD138A5E9700F2653C /* pqformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqformat.h; sourceTree = "<group>"; };
-		4BA502FE138A5E9700F2653C /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqsignal.h; sourceTree = "<group>"; };
-		4BA502FF138A5E9700F2653C /* getaddrinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getaddrinfo.h; sourceTree = "<group>"; };
-		4BA50300138A5E9700F2653C /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = port.h; sourceTree = "<group>"; };
-		4BA50301138A5E9700F2653C /* postgres_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postgres_ext.h; sourceTree = "<group>"; };
-		4BA50302138A5E9800F2653C /* pg_config_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_os.h; sourceTree = "<group>"; };
-		4BA50303138A5E9800F2653C /* pg_config_manual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_manual.h; sourceTree = "<group>"; };
-		4BA50304138A5E9800F2653C /* pg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config.h; sourceTree = "<group>"; };
-		4BA50305138A5E9800F2653C /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
-		4BA50306138A5E9800F2653C /* postgres_fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postgres_fe.h; sourceTree = "<group>"; };
-		4BA50308138A5E9800F2653C /* pg_wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_wchar.h; sourceTree = "<group>"; };
-		4BA5031E138A61A600F2653C /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
-		4BB312D5138A890800692052 /* pgstrcasecmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pgstrcasecmp.c; sourceTree = "<group>"; };
-		4BB312D6138A890800692052 /* noblock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noblock.c; sourceTree = "<group>"; };
-		4BB312D7138A890800692052 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
-		4BB312DB138A891A00692052 /* wchar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wchar.c; sourceTree = "<group>"; };
-		4BB312DC138A891A00692052 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
-		4BB312DD138A891A00692052 /* ip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip.c; sourceTree = "<group>"; };
-		4BB312DE138A891A00692052 /* inet_net_ntop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet_net_ntop.c; sourceTree = "<group>"; };
-		4BB312DF138A891A00692052 /* encnames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encnames.c; sourceTree = "<group>"; };
-		4BB312E0138A891A00692052 /* chklocale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chklocale.c; sourceTree = "<group>"; };
+		4BB312E9138AA0E500692052 /* chklocale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = chklocale.c; path = src/interfaces/libpq/chklocale.c; sourceTree = SOURCE_ROOT; };
+		4BB312EA138AA0E500692052 /* encnames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encnames.c; path = src/interfaces/libpq/encnames.c; sourceTree = SOURCE_ROOT; };
+		4BB312EB138AA0E500692052 /* fe-auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-auth.c"; path = "src/interfaces/libpq/fe-auth.c"; sourceTree = SOURCE_ROOT; };
+		4BB312EC138AA0E500692052 /* fe-auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fe-auth.h"; path = "src/interfaces/libpq/fe-auth.h"; sourceTree = SOURCE_ROOT; };
+		4BB312ED138AA0E500692052 /* fe-connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-connect.c"; path = "src/interfaces/libpq/fe-connect.c"; sourceTree = SOURCE_ROOT; };
+		4BB312EE138AA0E500692052 /* fe-exec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-exec.c"; path = "src/interfaces/libpq/fe-exec.c"; sourceTree = SOURCE_ROOT; };
+		4BB312EF138AA0E500692052 /* fe-lobj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-lobj.c"; path = "src/interfaces/libpq/fe-lobj.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F0138AA0E500692052 /* fe-misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-misc.c"; path = "src/interfaces/libpq/fe-misc.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F1138AA0E500692052 /* fe-print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-print.c"; path = "src/interfaces/libpq/fe-print.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F2138AA0E500692052 /* fe-protocol2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-protocol2.c"; path = "src/interfaces/libpq/fe-protocol2.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F3138AA0E500692052 /* fe-protocol3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-protocol3.c"; path = "src/interfaces/libpq/fe-protocol3.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F4138AA0E500692052 /* fe-secure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "fe-secure.c"; path = "src/interfaces/libpq/fe-secure.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F5138AA0E500692052 /* inet_net_ntop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inet_net_ntop.c; path = src/interfaces/libpq/inet_net_ntop.c; sourceTree = SOURCE_ROOT; };
+		4BB312F6138AA0E500692052 /* ip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ip.c; path = src/interfaces/libpq/ip.c; sourceTree = SOURCE_ROOT; };
+		4BB312F7138AA0E500692052 /* libpq-events.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "libpq-events.c"; path = "src/interfaces/libpq/libpq-events.c"; sourceTree = SOURCE_ROOT; };
+		4BB312F8138AA0E500692052 /* libpq-events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libpq-events.h"; path = "src/interfaces/libpq/libpq-events.h"; sourceTree = SOURCE_ROOT; };
+		4BB312F9138AA0E500692052 /* libpq-fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libpq-fe.h"; path = "src/interfaces/libpq/libpq-fe.h"; sourceTree = SOURCE_ROOT; };
+		4BB312FA138AA0E500692052 /* libpq-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libpq-int.h"; path = "src/interfaces/libpq/libpq-int.h"; sourceTree = SOURCE_ROOT; };
+		4BB312FC138AA0E500692052 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = md5.c; path = src/interfaces/libpq/md5.c; sourceTree = SOURCE_ROOT; };
+		4BB312FD138AA0E500692052 /* noblock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = noblock.c; path = src/interfaces/libpq/noblock.c; sourceTree = SOURCE_ROOT; };
+		4BB312FE138AA0E500692052 /* pgstrcasecmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pgstrcasecmp.c; path = src/interfaces/libpq/pgstrcasecmp.c; sourceTree = SOURCE_ROOT; };
+		4BB312FF138AA0E500692052 /* pqexpbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pqexpbuffer.c; path = src/interfaces/libpq/pqexpbuffer.c; sourceTree = SOURCE_ROOT; };
+		4BB31300138AA0E500692052 /* pqexpbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqexpbuffer.h; path = src/interfaces/libpq/pqexpbuffer.h; sourceTree = SOURCE_ROOT; };
+		4BB31301138AA0E500692052 /* pqsignal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pqsignal.c; path = src/interfaces/libpq/pqsignal.c; sourceTree = SOURCE_ROOT; };
+		4BB31302138AA0E500692052 /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqsignal.h; path = src/interfaces/libpq/pqsignal.h; sourceTree = SOURCE_ROOT; };
+		4BB31303138AA0E500692052 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = thread.c; path = src/interfaces/libpq/thread.c; sourceTree = SOURCE_ROOT; };
+		4BB31304138AA0E500692052 /* wchar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wchar.c; path = src/interfaces/libpq/wchar.c; sourceTree = SOURCE_ROOT; };
+		4BB31322138AA16A00692052 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c.h; path = src/include/c.h; sourceTree = SOURCE_ROOT; };
+		4BB31323138AA16A00692052 /* getaddrinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getaddrinfo.h; path = src/include/getaddrinfo.h; sourceTree = SOURCE_ROOT; };
+		4BB31325138AA16A00692052 /* auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
+		4BB31326138AA16A00692052 /* be-fsstubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "be-fsstubs.h"; sourceTree = "<group>"; };
+		4BB31327138AA16A00692052 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		4BB31328138AA16A00692052 /* hba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hba.h; sourceTree = "<group>"; };
+		4BB31329138AA16A00692052 /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
+		4BB3132A138AA16A00692052 /* libpq-be.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-be.h"; sourceTree = "<group>"; };
+		4BB3132B138AA16A00692052 /* libpq-fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-fs.h"; sourceTree = "<group>"; };
+		4BB3132C138AA16A00692052 /* libpq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libpq.h; sourceTree = "<group>"; };
+		4BB3132D138AA16A00692052 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		4BB3132E138AA16A00692052 /* pqcomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqcomm.h; sourceTree = "<group>"; };
+		4BB3132F138AA16A00692052 /* pqformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqformat.h; sourceTree = "<group>"; };
+		4BB31330138AA16A00692052 /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqsignal.h; sourceTree = "<group>"; };
+		4BB31331138AA16A00692052 /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libpq-ios-Prefix.pch"; path = "src/include/libpq-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		4BB31333138AA16A00692052 /* pg_wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_wchar.h; sourceTree = "<group>"; };
+		4BB31334138AA16A00692052 /* pg_config_manual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pg_config_manual.h; path = src/include/pg_config_manual.h; sourceTree = SOURCE_ROOT; };
+		4BB31335138AA16A00692052 /* pg_config_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pg_config_os.h; path = src/include/pg_config_os.h; sourceTree = SOURCE_ROOT; };
+		4BB31336138AA16A00692052 /* pg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pg_config.h; path = src/include/pg_config.h; sourceTree = SOURCE_ROOT; };
+		4BB31337138AA16A00692052 /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = port.h; path = src/include/port.h; sourceTree = SOURCE_ROOT; };
+		4BB31338138AA16A00692052 /* postgres_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postgres_ext.h; path = src/include/postgres_ext.h; sourceTree = SOURCE_ROOT; };
+		4BB31339138AA16A00692052 /* postgres_fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postgres_fe.h; path = src/include/postgres_fe.h; sourceTree = SOURCE_ROOT; };
+		4BB31351138AA18800692052 /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA502A3138A58BD00F2653C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */,
 				4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +155,7 @@
 		4BA50294138A58BD00F2653C = {
 			isa = PBXGroup;
 			children = (
-				4BA502A4138A58BD00F2653C /* libpq-ios */,
+				4BA502A4138A58BD00F2653C /* src */,
 				4BA502B5138A58BD00F2653C /* libpq-iosTests */,
 				4BA502A1138A58BD00F2653C /* Frameworks */,
 				4BA502A0138A58BD00F2653C /* Products */,
@@ -178,61 +174,26 @@
 		4BA502A1138A58BD00F2653C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BA502A2138A58BD00F2653C /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4BA502A4138A58BD00F2653C /* libpq-ios */ = {
+		4BA502A4138A58BD00F2653C /* src */ = {
 			isa = PBXGroup;
 			children = (
-				4BB312DB138A891A00692052 /* wchar.c */,
-				4BB312DC138A891A00692052 /* thread.c */,
-				4BB312DD138A891A00692052 /* ip.c */,
-				4BB312DE138A891A00692052 /* inet_net_ntop.c */,
-				4BB312DF138A891A00692052 /* encnames.c */,
-				4BB312E0138A891A00692052 /* chklocale.c */,
-				4BB312D5138A890800692052 /* pgstrcasecmp.c */,
-				4BB312D6138A890800692052 /* noblock.c */,
-				4BB312D7138A890800692052 /* md5.c */,
-				4BA5031E138A61A600F2653C /* pg_config_paths.h */,
-				4BA502F2138A5E9700F2653C /* libpq */,
-				4BA502FF138A5E9700F2653C /* getaddrinfo.h */,
-				4BA50300138A5E9700F2653C /* port.h */,
-				4BA50301138A5E9700F2653C /* postgres_ext.h */,
-				4BA50302138A5E9800F2653C /* pg_config_os.h */,
-				4BA50303138A5E9800F2653C /* pg_config_manual.h */,
-				4BA50304138A5E9800F2653C /* pg_config.h */,
-				4BA50305138A5E9800F2653C /* c.h */,
-				4BA50306138A5E9800F2653C /* postgres_fe.h */,
-				4BA50307138A5E9800F2653C /* mb */,
-				4BA502CE138A599600F2653C /* pqsignal.h */,
-				4BA502CF138A599600F2653C /* pqexpbuffer.h */,
-				4BA502D0138A599600F2653C /* libpq-int.h */,
-				4BA502D1138A599600F2653C /* libpq-fe.h */,
-				4BA502D2138A599600F2653C /* libpq-events.h */,
-				4BA502D3138A599600F2653C /* fe-auth.h */,
-				4BA502D4138A599600F2653C /* pqsignal.c */,
-				4BA502D5138A599600F2653C /* pqexpbuffer.c */,
-				4BA502D6138A599600F2653C /* libpq-events.c */,
-				4BA502D7138A599600F2653C /* fe-secure.c */,
-				4BA502D8138A599600F2653C /* fe-protocol3.c */,
-				4BA502D9138A599600F2653C /* fe-protocol2.c */,
-				4BA502DA138A599600F2653C /* fe-print.c */,
-				4BA502DB138A599600F2653C /* fe-misc.c */,
-				4BA502DC138A599600F2653C /* fe-lobj.c */,
-				4BA502DD138A599600F2653C /* fe-exec.c */,
-				4BA502DE138A599600F2653C /* fe-connect.c */,
-				4BA502DF138A599600F2653C /* fe-auth.c */,
+				4BB31350138AA18800692052 /* port */,
+				4BB31321138AA14C00692052 /* include */,
+				4BB312E7138AA07B00692052 /* interfaces */,
 				4BA502A5138A58BD00F2653C /* Supporting Files */,
 			);
+			name = src;
 			path = "libpq-ios";
 			sourceTree = "<group>";
 		};
 		4BA502A5138A58BD00F2653C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4BA502A6138A58BD00F2653C /* libpq-ios-Prefix.pch */,
+				4BB31331138AA16A00692052 /* libpq-ios-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,32 +218,102 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4BA502F2138A5E9700F2653C /* libpq */ = {
+		4BB312E7138AA07B00692052 /* interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				4BA502F3138A5E9700F2653C /* auth.h */,
-				4BA502F4138A5E9700F2653C /* be-fsstubs.h */,
-				4BA502F5138A5E9700F2653C /* crypt.h */,
-				4BA502F6138A5E9700F2653C /* hba.h */,
-				4BA502F7138A5E9700F2653C /* ip.h */,
-				4BA502F8138A5E9700F2653C /* libpq-be.h */,
-				4BA502F9138A5E9700F2653C /* libpq-fs.h */,
-				4BA502FA138A5E9700F2653C /* libpq.h */,
-				4BA502FB138A5E9700F2653C /* md5.h */,
-				4BA502FC138A5E9700F2653C /* pqcomm.h */,
-				4BA502FD138A5E9700F2653C /* pqformat.h */,
-				4BA502FE138A5E9700F2653C /* pqsignal.h */,
+				4BB312E8138AA09A00692052 /* libpq */,
 			);
-			path = libpq;
+			name = interfaces;
 			sourceTree = "<group>";
 		};
-		4BA50307138A5E9800F2653C /* mb */ = {
+		4BB312E8138AA09A00692052 /* libpq */ = {
 			isa = PBXGroup;
 			children = (
-				4BA50308138A5E9800F2653C /* pg_wchar.h */,
+				4BB312E9138AA0E500692052 /* chklocale.c */,
+				4BB312EA138AA0E500692052 /* encnames.c */,
+				4BB312EB138AA0E500692052 /* fe-auth.c */,
+				4BB312EC138AA0E500692052 /* fe-auth.h */,
+				4BB312ED138AA0E500692052 /* fe-connect.c */,
+				4BB312EE138AA0E500692052 /* fe-exec.c */,
+				4BB312EF138AA0E500692052 /* fe-lobj.c */,
+				4BB312F0138AA0E500692052 /* fe-misc.c */,
+				4BB312F1138AA0E500692052 /* fe-print.c */,
+				4BB312F2138AA0E500692052 /* fe-protocol2.c */,
+				4BB312F3138AA0E500692052 /* fe-protocol3.c */,
+				4BB312F4138AA0E500692052 /* fe-secure.c */,
+				4BB312F5138AA0E500692052 /* inet_net_ntop.c */,
+				4BB312F6138AA0E500692052 /* ip.c */,
+				4BB312F7138AA0E500692052 /* libpq-events.c */,
+				4BB312F8138AA0E500692052 /* libpq-events.h */,
+				4BB312F9138AA0E500692052 /* libpq-fe.h */,
+				4BB312FA138AA0E500692052 /* libpq-int.h */,
+				4BB312FC138AA0E500692052 /* md5.c */,
+				4BB312FD138AA0E500692052 /* noblock.c */,
+				4BB312FE138AA0E500692052 /* pgstrcasecmp.c */,
+				4BB312FF138AA0E500692052 /* pqexpbuffer.c */,
+				4BB31300138AA0E500692052 /* pqexpbuffer.h */,
+				4BB31301138AA0E500692052 /* pqsignal.c */,
+				4BB31302138AA0E500692052 /* pqsignal.h */,
+				4BB31303138AA0E500692052 /* thread.c */,
+				4BB31304138AA0E500692052 /* wchar.c */,
 			);
-			path = mb;
+			name = libpq;
 			sourceTree = "<group>";
+		};
+		4BB31321138AA14C00692052 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4BB31322138AA16A00692052 /* c.h */,
+				4BB31323138AA16A00692052 /* getaddrinfo.h */,
+				4BB31324138AA16A00692052 /* libpq */,
+				4BB31332138AA16A00692052 /* mb */,
+				4BB31334138AA16A00692052 /* pg_config_manual.h */,
+				4BB31335138AA16A00692052 /* pg_config_os.h */,
+				4BB31336138AA16A00692052 /* pg_config.h */,
+				4BB31337138AA16A00692052 /* port.h */,
+				4BB31338138AA16A00692052 /* postgres_ext.h */,
+				4BB31339138AA16A00692052 /* postgres_fe.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		4BB31324138AA16A00692052 /* libpq */ = {
+			isa = PBXGroup;
+			children = (
+				4BB31325138AA16A00692052 /* auth.h */,
+				4BB31326138AA16A00692052 /* be-fsstubs.h */,
+				4BB31327138AA16A00692052 /* crypt.h */,
+				4BB31328138AA16A00692052 /* hba.h */,
+				4BB31329138AA16A00692052 /* ip.h */,
+				4BB3132A138AA16A00692052 /* libpq-be.h */,
+				4BB3132B138AA16A00692052 /* libpq-fs.h */,
+				4BB3132C138AA16A00692052 /* libpq.h */,
+				4BB3132D138AA16A00692052 /* md5.h */,
+				4BB3132E138AA16A00692052 /* pqcomm.h */,
+				4BB3132F138AA16A00692052 /* pqformat.h */,
+				4BB31330138AA16A00692052 /* pqsignal.h */,
+			);
+			name = libpq;
+			path = src/include/libpq;
+			sourceTree = SOURCE_ROOT;
+		};
+		4BB31332138AA16A00692052 /* mb */ = {
+			isa = PBXGroup;
+			children = (
+				4BB31333138AA16A00692052 /* pg_wchar.h */,
+			);
+			name = mb;
+			path = src/include/mb;
+			sourceTree = SOURCE_ROOT;
+		};
+		4BB31350138AA18800692052 /* port */ = {
+			isa = PBXGroup;
+			children = (
+				4BB31351138AA18800692052 /* pg_config_paths.h */,
+			);
+			name = port;
+			path = src/port;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -291,34 +322,35 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA502E0138A599600F2653C /* pqsignal.h in Headers */,
-				4BA502E1138A599600F2653C /* pqexpbuffer.h in Headers */,
-				4BA502E2138A599600F2653C /* libpq-int.h in Headers */,
-				4BA502E3138A599600F2653C /* libpq-fe.h in Headers */,
-				4BA502E4138A599600F2653C /* libpq-events.h in Headers */,
-				4BA502E5138A599600F2653C /* fe-auth.h in Headers */,
-				4BA50309138A5E9800F2653C /* auth.h in Headers */,
-				4BA5030A138A5E9800F2653C /* be-fsstubs.h in Headers */,
-				4BA5030B138A5E9800F2653C /* crypt.h in Headers */,
-				4BA5030C138A5E9800F2653C /* hba.h in Headers */,
-				4BA5030D138A5E9800F2653C /* ip.h in Headers */,
-				4BA5030E138A5E9800F2653C /* libpq-be.h in Headers */,
-				4BA5030F138A5E9800F2653C /* libpq-fs.h in Headers */,
-				4BA50310138A5E9800F2653C /* libpq.h in Headers */,
-				4BA50311138A5E9800F2653C /* md5.h in Headers */,
-				4BA50312138A5E9800F2653C /* pqcomm.h in Headers */,
-				4BA50313138A5E9800F2653C /* pqformat.h in Headers */,
-				4BA50314138A5E9800F2653C /* pqsignal.h in Headers */,
-				4BA50315138A5E9800F2653C /* getaddrinfo.h in Headers */,
-				4BA50316138A5E9800F2653C /* port.h in Headers */,
-				4BA50317138A5E9800F2653C /* postgres_ext.h in Headers */,
-				4BA50318138A5E9800F2653C /* pg_config_os.h in Headers */,
-				4BA50319138A5E9800F2653C /* pg_config_manual.h in Headers */,
-				4BA5031A138A5E9800F2653C /* pg_config.h in Headers */,
-				4BA5031B138A5E9800F2653C /* c.h in Headers */,
-				4BA5031C138A5E9800F2653C /* postgres_fe.h in Headers */,
-				4BA5031D138A5E9800F2653C /* pg_wchar.h in Headers */,
-				4BA5031F138A61A600F2653C /* pg_config_paths.h in Headers */,
+				4BB31308138AA0E500692052 /* fe-auth.h in Headers */,
+				4BB31314138AA0E500692052 /* libpq-events.h in Headers */,
+				4BB31315138AA0E500692052 /* libpq-fe.h in Headers */,
+				4BB31316138AA0E500692052 /* libpq-int.h in Headers */,
+				4BB3131C138AA0E500692052 /* pqexpbuffer.h in Headers */,
+				4BB3131E138AA0E500692052 /* pqsignal.h in Headers */,
+				4BB3133A138AA16A00692052 /* c.h in Headers */,
+				4BB3133B138AA16A00692052 /* getaddrinfo.h in Headers */,
+				4BB3133C138AA16A00692052 /* auth.h in Headers */,
+				4BB3133D138AA16A00692052 /* be-fsstubs.h in Headers */,
+				4BB3133E138AA16A00692052 /* crypt.h in Headers */,
+				4BB3133F138AA16A00692052 /* hba.h in Headers */,
+				4BB31340138AA16A00692052 /* ip.h in Headers */,
+				4BB31341138AA16A00692052 /* libpq-be.h in Headers */,
+				4BB31342138AA16A00692052 /* libpq-fs.h in Headers */,
+				4BB31343138AA16A00692052 /* libpq.h in Headers */,
+				4BB31344138AA16A00692052 /* md5.h in Headers */,
+				4BB31345138AA16A00692052 /* pqcomm.h in Headers */,
+				4BB31346138AA16A00692052 /* pqformat.h in Headers */,
+				4BB31347138AA16A00692052 /* pqsignal.h in Headers */,
+				4BB31348138AA16A00692052 /* libpq-ios-Prefix.pch in Headers */,
+				4BB31349138AA16A00692052 /* pg_wchar.h in Headers */,
+				4BB3134A138AA16A00692052 /* pg_config_manual.h in Headers */,
+				4BB3134B138AA16A00692052 /* pg_config_os.h in Headers */,
+				4BB3134C138AA16A00692052 /* pg_config.h in Headers */,
+				4BB3134D138AA16A00692052 /* port.h in Headers */,
+				4BB3134E138AA16A00692052 /* postgres_ext.h in Headers */,
+				4BB3134F138AA16A00692052 /* postgres_fe.h in Headers */,
+				4BB31352138AA18800692052 /* pg_config_paths.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,27 +449,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA502E6138A599600F2653C /* pqsignal.c in Sources */,
-				4BA502E7138A599600F2653C /* pqexpbuffer.c in Sources */,
-				4BA502E8138A599600F2653C /* libpq-events.c in Sources */,
-				4BA502E9138A599600F2653C /* fe-secure.c in Sources */,
-				4BA502EA138A599600F2653C /* fe-protocol3.c in Sources */,
-				4BA502EB138A599600F2653C /* fe-protocol2.c in Sources */,
-				4BA502EC138A599600F2653C /* fe-print.c in Sources */,
-				4BA502ED138A599600F2653C /* fe-misc.c in Sources */,
-				4BA502EE138A599600F2653C /* fe-lobj.c in Sources */,
-				4BA502EF138A599600F2653C /* fe-exec.c in Sources */,
-				4BA502F0138A599600F2653C /* fe-connect.c in Sources */,
-				4BA502F1138A599600F2653C /* fe-auth.c in Sources */,
-				4BB312D8138A890900692052 /* pgstrcasecmp.c in Sources */,
-				4BB312D9138A890900692052 /* noblock.c in Sources */,
-				4BB312DA138A890900692052 /* md5.c in Sources */,
-				4BB312E1138A891A00692052 /* wchar.c in Sources */,
-				4BB312E2138A891A00692052 /* thread.c in Sources */,
-				4BB312E3138A891A00692052 /* ip.c in Sources */,
-				4BB312E4138A891A00692052 /* inet_net_ntop.c in Sources */,
-				4BB312E5138A891A00692052 /* encnames.c in Sources */,
-				4BB312E6138A891A00692052 /* chklocale.c in Sources */,
+				4BB31305138AA0E500692052 /* chklocale.c in Sources */,
+				4BB31306138AA0E500692052 /* encnames.c in Sources */,
+				4BB31307138AA0E500692052 /* fe-auth.c in Sources */,
+				4BB31309138AA0E500692052 /* fe-connect.c in Sources */,
+				4BB3130A138AA0E500692052 /* fe-exec.c in Sources */,
+				4BB3130B138AA0E500692052 /* fe-lobj.c in Sources */,
+				4BB3130C138AA0E500692052 /* fe-misc.c in Sources */,
+				4BB3130D138AA0E500692052 /* fe-print.c in Sources */,
+				4BB3130E138AA0E500692052 /* fe-protocol2.c in Sources */,
+				4BB3130F138AA0E500692052 /* fe-protocol3.c in Sources */,
+				4BB31310138AA0E500692052 /* fe-secure.c in Sources */,
+				4BB31311138AA0E500692052 /* inet_net_ntop.c in Sources */,
+				4BB31312138AA0E500692052 /* ip.c in Sources */,
+				4BB31313138AA0E500692052 /* libpq-events.c in Sources */,
+				4BB31318138AA0E500692052 /* md5.c in Sources */,
+				4BB31319138AA0E500692052 /* noblock.c in Sources */,
+				4BB3131A138AA0E500692052 /* pgstrcasecmp.c in Sources */,
+				4BB3131B138AA0E500692052 /* pqexpbuffer.c in Sources */,
+				4BB3131D138AA0E500692052 /* pqsignal.c in Sources */,
+				4BB3131F138AA0E500692052 /* thread.c in Sources */,
+				4BB31320138AA0E500692052 /* wchar.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +538,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/libpq_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "src/include/libpq-ios-Prefix.pch";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"FRONTEND=1",
 					"UNSAFE_STAT_OK=1",
@@ -514,7 +546,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "pq-ios";
 				USER_HEADER_SEARCH_PATHS = "";
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include";
 			};
 			name = Debug;
 		};
@@ -524,14 +556,14 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/libpq_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "src/include/libpq-ios-Prefix.pch";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"FRONTEND=1",
 					"UNSAFE_STAT_OK=1",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "pq-ios";
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include";
 			};
 			name = Release;
 		};
