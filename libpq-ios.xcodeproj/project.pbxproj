@@ -11,7 +11,7 @@
 		4BA502AE138A58BD00F2653C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502AD138A58BD00F2653C /* UIKit.framework */; };
 		4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
 		4BA502B1138A58BD00F2653C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502B0138A58BD00F2653C /* CoreGraphics.framework */; };
-		4BA502B4138A58BD00F2653C /* liblibpq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* liblibpq-ios.a */; };
+		4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq-ios.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
 		4BA502BF138A58BD00F2653C /* libpq_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502BE138A58BD00F2653C /* libpq_iosTests.m */; };
@@ -68,7 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BA5029F138A58BD00F2653C /* liblibpq-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibpq-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA5029F138A58BD00F2653C /* libpq-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpq-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA502A2138A58BD00F2653C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BA502A6138A58BD00F2653C /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpq-ios-Prefix.pch"; sourceTree = "<group>"; };
 		4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libpq-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +137,7 @@
 				4BA502AE138A58BD00F2653C /* UIKit.framework in Frameworks */,
 				4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */,
 				4BA502B1138A58BD00F2653C /* CoreGraphics.framework in Frameworks */,
-				4BA502B4138A58BD00F2653C /* liblibpq-ios.a in Frameworks */,
+				4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +157,7 @@
 		4BA502A0138A58BD00F2653C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BA5029F138A58BD00F2653C /* liblibpq-ios.a */,
+				4BA5029F138A58BD00F2653C /* libpq-ios.a */,
 				4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */,
 			);
 			name = Products;
@@ -320,7 +320,7 @@
 			);
 			name = "libpq-ios";
 			productName = "libpq-ios";
-			productReference = 4BA5029F138A58BD00F2653C /* liblibpq-ios.a */;
+			productReference = 4BA5029F138A58BD00F2653C /* libpq-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		4BA502AB138A58BD00F2653C /* libpq-iosTests */ = {
@@ -480,7 +480,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "pq-ios";
 				USER_HEADER_SEARCH_PATHS = "";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
 			};
@@ -494,7 +494,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "pq-ios";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
 			};
 			name = Release;
@@ -558,6 +558,7 @@
 				4BA502C4138A58BD00F2653C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BA502C5138A58BD00F2653C /* Build configuration list for PBXNativeTarget "libpq-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +567,7 @@
 				4BA502C7138A58BD00F2653C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
