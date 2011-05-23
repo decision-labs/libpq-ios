@@ -61,6 +61,7 @@
 		4BB3134E138AA16A00692052 /* postgres_ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31338138AA16A00692052 /* postgres_ext.h */; };
 		4BB3134F138AA16A00692052 /* postgres_fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31339138AA16A00692052 /* postgres_fe.h */; };
 		4BB31352138AA18800692052 /* pg_config_paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB31351138AA18800692052 /* pg_config_paths.h */; };
+		4BB62EE9138AE13F00CD3BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB62EE8138AE13F00CD3BBD /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		4BB31338138AA16A00692052 /* postgres_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postgres_ext.h; path = src/include/postgres_ext.h; sourceTree = SOURCE_ROOT; };
 		4BB31339138AA16A00692052 /* postgres_fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postgres_fe.h; path = src/include/postgres_fe.h; sourceTree = SOURCE_ROOT; };
 		4BB31351138AA18800692052 /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
+		4BB62EE8138AE13F00CD3BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB62EE9138AE13F00CD3BBD /* Foundation.framework in Frameworks */,
 				4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +177,7 @@
 		4BA502A1138A58BD00F2653C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BB62EE8138AE13F00CD3BBD /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
