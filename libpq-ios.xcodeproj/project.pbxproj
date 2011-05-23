@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BA502A3138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
+		4BA502AE138A58BD00F2653C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502AD138A58BD00F2653C /* UIKit.framework */; };
+		4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
+		4BA502B1138A58BD00F2653C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502B0138A58BD00F2653C /* CoreGraphics.framework */; };
+		4BA502B4138A58BD00F2653C /* liblibpq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* liblibpq-ios.a */; };
+		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
+		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
+		4BA502BF138A58BD00F2653C /* libpq_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502BE138A58BD00F2653C /* libpq_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BA502B2138A58BD00F2653C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA50296138A58BD00F2653C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA5029E138A58BD00F2653C;
+			remoteInfo = "libpq-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BA5029F138A58BD00F2653C /* liblibpq-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibpq-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA502A2138A58BD00F2653C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BA502A6138A58BD00F2653C /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; path = "libpq-ios-Prefix.pch"; sourceTree = "<group>"; };
+		4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libpq-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA502AD138A58BD00F2653C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BA502B0138A58BD00F2653C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4BA502B7138A58BD00F2653C /* libpq-iosTests-Info.plist */ = {isa = PBXFileReference; path = "libpq-iosTests-Info.plist"; sourceTree = "<group>"; };
+		4BA502B9138A58BD00F2653C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BA502BB138A58BD00F2653C /* libpq-iosTests-Prefix.pch */ = {isa = PBXFileReference; path = "libpq-iosTests-Prefix.pch"; sourceTree = "<group>"; };
+		4BA502BC138A58BD00F2653C /* libpq_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libpq_iosTests.h; sourceTree = "<group>"; };
+		4BA502BE138A58BD00F2653C /* libpq_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libpq_iosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BA5029C138A58BD00F2653C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA502A3138A58BD00F2653C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA502A8138A58BD00F2653C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA502AE138A58BD00F2653C /* UIKit.framework in Frameworks */,
+				4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */,
+				4BA502B1138A58BD00F2653C /* CoreGraphics.framework in Frameworks */,
+				4BA502B4138A58BD00F2653C /* liblibpq-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BA50294138A58BD00F2653C = {
+			isa = PBXGroup;
+			children = (
+				4BA502A4138A58BD00F2653C /* libpq-ios */,
+				4BA502B5138A58BD00F2653C /* libpq-iosTests */,
+				4BA502A1138A58BD00F2653C /* Frameworks */,
+				4BA502A0138A58BD00F2653C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BA502A0138A58BD00F2653C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BA5029F138A58BD00F2653C /* liblibpq-ios.a */,
+				4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BA502A1138A58BD00F2653C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA502A2138A58BD00F2653C /* Foundation.framework */,
+				4BA502AD138A58BD00F2653C /* UIKit.framework */,
+				4BA502B0138A58BD00F2653C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BA502A4138A58BD00F2653C /* libpq-ios */ = {
+			isa = PBXGroup;
+			children = (
+				4BA502A5138A58BD00F2653C /* Supporting Files */,
+			);
+			path = "libpq-ios";
+			sourceTree = "<group>";
+		};
+		4BA502A5138A58BD00F2653C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BA502A6138A58BD00F2653C /* libpq-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BA502B5138A58BD00F2653C /* libpq-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA502BC138A58BD00F2653C /* libpq_iosTests.h */,
+				4BA502BE138A58BD00F2653C /* libpq_iosTests.m */,
+				4BA502B6138A58BD00F2653C /* Supporting Files */,
+			);
+			path = "libpq-iosTests";
+			sourceTree = "<group>";
+		};
+		4BA502B6138A58BD00F2653C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BA502B7138A58BD00F2653C /* libpq-iosTests-Info.plist */,
+				4BA502B8138A58BD00F2653C /* InfoPlist.strings */,
+				4BA502BB138A58BD00F2653C /* libpq-iosTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BA5029D138A58BD00F2653C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4BA5029E138A58BD00F2653C /* libpq-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA502C2138A58BD00F2653C /* Build configuration list for PBXNativeTarget "libpq-ios" */;
+			buildPhases = (
+				4BA5029B138A58BD00F2653C /* Sources */,
+				4BA5029C138A58BD00F2653C /* Frameworks */,
+				4BA5029D138A58BD00F2653C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libpq-ios";
+			productName = "libpq-ios";
+			productReference = 4BA5029F138A58BD00F2653C /* liblibpq-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4BA502AB138A58BD00F2653C /* libpq-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA502C5138A58BD00F2653C /* Build configuration list for PBXNativeTarget "libpq-iosTests" */;
+			buildPhases = (
+				4BA502A7138A58BD00F2653C /* Sources */,
+				4BA502A8138A58BD00F2653C /* Frameworks */,
+				4BA502A9138A58BD00F2653C /* Resources */,
+				4BA502AA138A58BD00F2653C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA502B3138A58BD00F2653C /* PBXTargetDependency */,
+			);
+			name = "libpq-iosTests";
+			productName = "libpq-iosTests";
+			productReference = 4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BA50296138A58BD00F2653C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4BA50299138A58BD00F2653C /* Build configuration list for PBXProject "libpq-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4BA50294138A58BD00F2653C;
+			productRefGroup = 4BA502A0138A58BD00F2653C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BA5029E138A58BD00F2653C /* libpq-ios */,
+				4BA502AB138A58BD00F2653C /* libpq-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BA502A9138A58BD00F2653C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */,
+				4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BA502AA138A58BD00F2653C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BA5029B138A58BD00F2653C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA502A7138A58BD00F2653C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA502BF138A58BD00F2653C /* libpq_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BA502B3138A58BD00F2653C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA5029E138A58BD00F2653C /* libpq-ios */;
+			targetProxy = 4BA502B2138A58BD00F2653C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BA502B8138A58BD00F2653C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA502B9138A58BD00F2653C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BA502C0138A58BD00F2653C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4BA502C1138A58BD00F2653C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4BA502C3138A58BD00F2653C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/libpq_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4BA502C4138A58BD00F2653C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/libpq_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4BA502C6138A58BD00F2653C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpq-iosTests/libpq-iosTests-Prefix.pch";
+				INFOPLIST_FILE = "libpq-iosTests/libpq-iosTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4BA502C7138A58BD00F2653C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpq-iosTests/libpq-iosTests-Prefix.pch";
+				INFOPLIST_FILE = "libpq-iosTests/libpq-iosTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BA50299138A58BD00F2653C /* Build configuration list for PBXProject "libpq-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA502C0138A58BD00F2653C /* Debug */,
+				4BA502C1138A58BD00F2653C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA502C2138A58BD00F2653C /* Build configuration list for PBXNativeTarget "libpq-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA502C3138A58BD00F2653C /* Debug */,
+				4BA502C4138A58BD00F2653C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BA502C5138A58BD00F2653C /* Build configuration list for PBXNativeTarget "libpq-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA502C6138A58BD00F2653C /* Debug */,
+				4BA502C7138A58BD00F2653C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BA50296138A58BD00F2653C /* Project object */;
+}

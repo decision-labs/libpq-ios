@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'libpq-iosTests' target in the 'libpq-iosTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
