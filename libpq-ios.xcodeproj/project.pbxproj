@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4BA502A3138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
-		4BA502AE138A58BD00F2653C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502AD138A58BD00F2653C /* UIKit.framework */; };
 		4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502A2138A58BD00F2653C /* Foundation.framework */; };
-		4BA502B1138A58BD00F2653C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA502B0138A58BD00F2653C /* CoreGraphics.framework */; };
 		4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq-ios.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
@@ -55,6 +53,15 @@
 		4BA5031C138A5E9800F2653C /* postgres_fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50306138A5E9800F2653C /* postgres_fe.h */; };
 		4BA5031D138A5E9800F2653C /* pg_wchar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA50308138A5E9800F2653C /* pg_wchar.h */; };
 		4BA5031F138A61A600F2653C /* pg_config_paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA5031E138A61A600F2653C /* pg_config_paths.h */; };
+		4BB312D8138A890900692052 /* pgstrcasecmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312D5138A890800692052 /* pgstrcasecmp.c */; };
+		4BB312D9138A890900692052 /* noblock.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312D6138A890800692052 /* noblock.c */; };
+		4BB312DA138A890900692052 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312D7138A890800692052 /* md5.c */; };
+		4BB312E1138A891A00692052 /* wchar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DB138A891A00692052 /* wchar.c */; };
+		4BB312E2138A891A00692052 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DC138A891A00692052 /* thread.c */; };
+		4BB312E3138A891A00692052 /* ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DD138A891A00692052 /* ip.c */; };
+		4BB312E4138A891A00692052 /* inet_net_ntop.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DE138A891A00692052 /* inet_net_ntop.c */; };
+		4BB312E5138A891A00692052 /* encnames.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312DF138A891A00692052 /* encnames.c */; };
+		4BB312E6138A891A00692052 /* chklocale.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB312E0138A891A00692052 /* chklocale.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +79,6 @@
 		4BA502A2138A58BD00F2653C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BA502A6138A58BD00F2653C /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpq-ios-Prefix.pch"; sourceTree = "<group>"; };
 		4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libpq-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BA502AD138A58BD00F2653C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4BA502B0138A58BD00F2653C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4BA502B7138A58BD00F2653C /* libpq-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libpq-iosTests-Info.plist"; sourceTree = "<group>"; };
 		4BA502B9138A58BD00F2653C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BA502BB138A58BD00F2653C /* libpq-iosTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpq-iosTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -119,6 +124,15 @@
 		4BA50306138A5E9800F2653C /* postgres_fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postgres_fe.h; sourceTree = "<group>"; };
 		4BA50308138A5E9800F2653C /* pg_wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_wchar.h; sourceTree = "<group>"; };
 		4BA5031E138A61A600F2653C /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
+		4BB312D5138A890800692052 /* pgstrcasecmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pgstrcasecmp.c; sourceTree = "<group>"; };
+		4BB312D6138A890800692052 /* noblock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = noblock.c; sourceTree = "<group>"; };
+		4BB312D7138A890800692052 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		4BB312DB138A891A00692052 /* wchar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wchar.c; sourceTree = "<group>"; };
+		4BB312DC138A891A00692052 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
+		4BB312DD138A891A00692052 /* ip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip.c; sourceTree = "<group>"; };
+		4BB312DE138A891A00692052 /* inet_net_ntop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet_net_ntop.c; sourceTree = "<group>"; };
+		4BB312DF138A891A00692052 /* encnames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encnames.c; sourceTree = "<group>"; };
+		4BB312E0138A891A00692052 /* chklocale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chklocale.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA502AE138A58BD00F2653C /* UIKit.framework in Frameworks */,
 				4BA502AF138A58BD00F2653C /* Foundation.framework in Frameworks */,
-				4BA502B1138A58BD00F2653C /* CoreGraphics.framework in Frameworks */,
 				4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,8 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				4BA502A2138A58BD00F2653C /* Foundation.framework */,
-				4BA502AD138A58BD00F2653C /* UIKit.framework */,
-				4BA502B0138A58BD00F2653C /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,6 +186,15 @@
 		4BA502A4138A58BD00F2653C /* libpq-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4BB312DB138A891A00692052 /* wchar.c */,
+				4BB312DC138A891A00692052 /* thread.c */,
+				4BB312DD138A891A00692052 /* ip.c */,
+				4BB312DE138A891A00692052 /* inet_net_ntop.c */,
+				4BB312DF138A891A00692052 /* encnames.c */,
+				4BB312E0138A891A00692052 /* chklocale.c */,
+				4BB312D5138A890800692052 /* pgstrcasecmp.c */,
+				4BB312D6138A890800692052 /* noblock.c */,
+				4BB312D7138A890800692052 /* md5.c */,
 				4BA5031E138A61A600F2653C /* pg_config_paths.h */,
 				4BA502F2138A5E9700F2653C /* libpq */,
 				4BA502FF138A5E9700F2653C /* getaddrinfo.h */,
@@ -410,6 +429,15 @@
 				4BA502EF138A599600F2653C /* fe-exec.c in Sources */,
 				4BA502F0138A599600F2653C /* fe-connect.c in Sources */,
 				4BA502F1138A599600F2653C /* fe-auth.c in Sources */,
+				4BB312D8138A890900692052 /* pgstrcasecmp.c in Sources */,
+				4BB312D9138A890900692052 /* noblock.c in Sources */,
+				4BB312DA138A890900692052 /* md5.c in Sources */,
+				4BB312E1138A891A00692052 /* wchar.c in Sources */,
+				4BB312E2138A891A00692052 /* thread.c in Sources */,
+				4BB312E3138A891A00692052 /* ip.c in Sources */,
+				4BB312E4138A891A00692052 /* inet_net_ntop.c in Sources */,
+				4BB312E5138A891A00692052 /* encnames.c in Sources */,
+				4BB312E6138A891A00692052 /* chklocale.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +507,10 @@
 				DSTROOT = /tmp/libpq_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"FRONTEND=1",
+					"UNSAFE_STAT_OK=1",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "pq-ios";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -493,6 +525,10 @@
 				DSTROOT = /tmp/libpq_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"FRONTEND=1",
+					"UNSAFE_STAT_OK=1",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "pq-ios";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
