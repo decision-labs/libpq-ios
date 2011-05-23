@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq-ios.a */; };
+		4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
 		4BA502BF138A58BD00F2653C /* libpq_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502BE138A58BD00F2653C /* libpq_iosTests.m */; };
@@ -74,7 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BA5029F138A58BD00F2653C /* libpq-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpq-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA5029F138A58BD00F2653C /* libpq.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpq.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libpq-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA502B7138A58BD00F2653C /* libpq-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libpq-iosTests-Info.plist"; sourceTree = "<group>"; };
 		4BA502B9138A58BD00F2653C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA502B4138A58BD00F2653C /* libpq-ios.a in Frameworks */,
+				4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 		4BA502A0138A58BD00F2653C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BA5029F138A58BD00F2653C /* libpq-ios.a */,
+				4BA5029F138A58BD00F2653C /* libpq.a */,
 				4BA502AC138A58BD00F2653C /* libpq-iosTests.octest */,
 			);
 			name = Products;
@@ -371,7 +371,7 @@
 			);
 			name = "libpq-ios";
 			productName = "libpq-ios";
-			productReference = 4BA5029F138A58BD00F2653C /* libpq-ios.a */;
+			productReference = 4BA5029F138A58BD00F2653C /* libpq.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		4BA502AB138A58BD00F2653C /* libpq-iosTests */ = {
@@ -544,7 +544,7 @@
 					"UNSAFE_STAT_OK=1",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "pq-ios";
+				PRODUCT_NAME = pq;
 				USER_HEADER_SEARCH_PATHS = "";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include";
 			};
@@ -562,7 +562,7 @@
 					"UNSAFE_STAT_OK=1",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "pq-ios";
+				PRODUCT_NAME = pq;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include";
 			};
 			name = Release;
