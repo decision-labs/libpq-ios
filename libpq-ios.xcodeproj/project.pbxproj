@@ -481,6 +481,8 @@
 				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
 			};
 			name = Debug;
 		};
@@ -493,6 +495,7 @@
 				GCC_PREFIX_HEADER = "libpq-ios/libpq-ios-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/libpq-ios";
 			};
 			name = Release;
 		};
