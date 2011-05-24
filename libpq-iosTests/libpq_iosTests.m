@@ -30,7 +30,8 @@
 {
     NSLog(@"%@ start", self.name);
     if (PQstatus(conn) != CONNECTION_OK) {
-        fprintf(stderr, "Connection to database failed: %s", PQerrorMessage(conn));
+        NSString *message = [[NSString alloc] initWithUTF8String:PQerrorMessage(conn)];
+        NSLog(@"Connection to database failed: %@", message);
     }
 }
 
@@ -40,7 +41,8 @@
     res = PQexec(conn, "BEGIN");
 
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
-        fprintf(stderr, "BEGIN command failed: %s", PQerrorMessage(conn));
+        NSString *message = [[NSString alloc] initWithUTF8String:PQerrorMessage(conn)];
+        NSLog(@"BEGIN command failed: %@", message);
     }
 
     PQclear(res);
