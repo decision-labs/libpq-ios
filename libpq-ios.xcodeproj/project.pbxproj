@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B9F806F138BEDE800A9C199 /* libpq-events.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F8138AA0E500692052 /* libpq-events.h */; };
-		4B9F8070138BEDFE00A9C199 /* libpq-fe.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F9138AA0E500692052 /* libpq-fe.h */; };
 		4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
@@ -37,6 +35,13 @@
 		4BB62EE9138AE13F00CD3BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB62EE8138AE13F00CD3BBD /* Foundation.framework */; };
 		4BD8A1EA138E644200280BE3 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD8A1E8138E644200280BE3 /* libssl.a */; };
 		4BD8A1EB138E644200280BE3 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD8A1E9138E644200280BE3 /* libcrypto.a */; };
+		4BEFA4F6138E788A007002C9 /* pg_config.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BEFA4E2138E7415007002C9 /* pg_config.h */; };
+		4BEFA4F7138E788A007002C9 /* pg_config_manual.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BEFA4E3138E7415007002C9 /* pg_config_manual.h */; };
+		4BEFA4F8138E788A007002C9 /* pg_config_os.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BEFA4E4138E7415007002C9 /* pg_config_os.h */; };
+		4BEFA4F9138E789A007002C9 /* libpq-events.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F8138AA0E500692052 /* libpq-events.h */; };
+		4BEFA4FA138E789A007002C9 /* libpq-fe.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F9138AA0E500692052 /* libpq-fe.h */; };
+		4BEFA4FB138E78A9007002C9 /* postgres_ext.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BEFA4E6138E7415007002C9 /* postgres_ext.h */; };
+		4BEFA4FD138E78E8007002C9 /* libpq-fs.h in Copy Static Headers subfolder */ = {isa = PBXBuildFile; fileRef = 4BEFA4D9138E7415007002C9 /* libpq-fs.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,16 +55,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4B9F8060138BEC6000A9C199 /* Copy Static Library Headers */ = {
+		4BEFA4F5138E786D007002C9 /* Copy Static Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = Headers;
 			dstSubfolderSpec = 16;
 			files = (
-				4B9F8070138BEDFE00A9C199 /* libpq-fe.h in Copy Static Library Headers */,
-				4B9F806F138BEDE800A9C199 /* libpq-events.h in Copy Static Library Headers */,
+				4BEFA4FB138E78A9007002C9 /* postgres_ext.h in Copy Static Headers */,
+				4BEFA4F9138E789A007002C9 /* libpq-events.h in Copy Static Headers */,
+				4BEFA4FA138E789A007002C9 /* libpq-fe.h in Copy Static Headers */,
+				4BEFA4F6138E788A007002C9 /* pg_config.h in Copy Static Headers */,
+				4BEFA4F7138E788A007002C9 /* pg_config_manual.h in Copy Static Headers */,
+				4BEFA4F8138E788A007002C9 /* pg_config_os.h in Copy Static Headers */,
 			);
-			name = "Copy Static Library Headers";
+			name = "Copy Static Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BEFA4FC138E78D4007002C9 /* Copy Static Headers subfolder */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers/libpq;
+			dstSubfolderSpec = 16;
+			files = (
+				4BEFA4FD138E78E8007002C9 /* libpq-fs.h in Copy Static Headers subfolder */,
+			);
+			name = "Copy Static Headers subfolder";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -103,6 +123,29 @@
 		4BB62EE8138AE13F00CD3BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BD8A1E8138E644200280BE3 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		4BD8A1E9138E644200280BE3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		4BEFA4CD138E7401007002C9 /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
+		4BEFA4D0138E7415007002C9 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		4BEFA4D1138E7415007002C9 /* getaddrinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getaddrinfo.h; sourceTree = "<group>"; };
+		4BEFA4D3138E7415007002C9 /* auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
+		4BEFA4D4138E7415007002C9 /* be-fsstubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "be-fsstubs.h"; sourceTree = "<group>"; };
+		4BEFA4D5138E7415007002C9 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		4BEFA4D6138E7415007002C9 /* hba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hba.h; sourceTree = "<group>"; };
+		4BEFA4D7138E7415007002C9 /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
+		4BEFA4D8138E7415007002C9 /* libpq-be.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-be.h"; sourceTree = "<group>"; };
+		4BEFA4D9138E7415007002C9 /* libpq-fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-fs.h"; sourceTree = "<group>"; };
+		4BEFA4DA138E7415007002C9 /* libpq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libpq.h; sourceTree = "<group>"; };
+		4BEFA4DB138E7415007002C9 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		4BEFA4DC138E7415007002C9 /* pqcomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqcomm.h; sourceTree = "<group>"; };
+		4BEFA4DD138E7415007002C9 /* pqformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqformat.h; sourceTree = "<group>"; };
+		4BEFA4DE138E7415007002C9 /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqsignal.h; sourceTree = "<group>"; };
+		4BEFA4DF138E7415007002C9 /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-ios-Prefix.pch"; sourceTree = "<group>"; };
+		4BEFA4E1138E7415007002C9 /* pg_wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_wchar.h; sourceTree = "<group>"; };
+		4BEFA4E2138E7415007002C9 /* pg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config.h; sourceTree = "<group>"; };
+		4BEFA4E3138E7415007002C9 /* pg_config_manual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_manual.h; sourceTree = "<group>"; };
+		4BEFA4E4138E7415007002C9 /* pg_config_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_os.h; sourceTree = "<group>"; };
+		4BEFA4E5138E7415007002C9 /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = port.h; sourceTree = "<group>"; };
+		4BEFA4E6138E7415007002C9 /* postgres_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postgres_ext.h; sourceTree = "<group>"; };
+		4BEFA4E7138E7415007002C9 /* postgres_fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postgres_fe.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +202,8 @@
 		4BA502A4138A58BD00F2653C /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4BEFA4CF138E7415007002C9 /* include */,
+				4BEFA4CC138E7401007002C9 /* port */,
 				4BB312E7138AA07B00692052 /* interfaces */,
 				4BA502A5138A58BD00F2653C /* Supporting Files */,
 			);
@@ -236,6 +281,61 @@
 			name = libpq;
 			sourceTree = "<group>";
 		};
+		4BEFA4CC138E7401007002C9 /* port */ = {
+			isa = PBXGroup;
+			children = (
+				4BEFA4CD138E7401007002C9 /* pg_config_paths.h */,
+			);
+			name = port;
+			path = src/port;
+			sourceTree = SOURCE_ROOT;
+		};
+		4BEFA4CF138E7415007002C9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4BEFA4D0138E7415007002C9 /* c.h */,
+				4BEFA4D1138E7415007002C9 /* getaddrinfo.h */,
+				4BEFA4D2138E7415007002C9 /* libpq */,
+				4BEFA4DF138E7415007002C9 /* libpq-ios-Prefix.pch */,
+				4BEFA4E0138E7415007002C9 /* mb */,
+				4BEFA4E2138E7415007002C9 /* pg_config.h */,
+				4BEFA4E3138E7415007002C9 /* pg_config_manual.h */,
+				4BEFA4E4138E7415007002C9 /* pg_config_os.h */,
+				4BEFA4E5138E7415007002C9 /* port.h */,
+				4BEFA4E6138E7415007002C9 /* postgres_ext.h */,
+				4BEFA4E7138E7415007002C9 /* postgres_fe.h */,
+			);
+			name = include;
+			path = src/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		4BEFA4D2138E7415007002C9 /* libpq */ = {
+			isa = PBXGroup;
+			children = (
+				4BEFA4D3138E7415007002C9 /* auth.h */,
+				4BEFA4D4138E7415007002C9 /* be-fsstubs.h */,
+				4BEFA4D5138E7415007002C9 /* crypt.h */,
+				4BEFA4D6138E7415007002C9 /* hba.h */,
+				4BEFA4D7138E7415007002C9 /* ip.h */,
+				4BEFA4D8138E7415007002C9 /* libpq-be.h */,
+				4BEFA4D9138E7415007002C9 /* libpq-fs.h */,
+				4BEFA4DA138E7415007002C9 /* libpq.h */,
+				4BEFA4DB138E7415007002C9 /* md5.h */,
+				4BEFA4DC138E7415007002C9 /* pqcomm.h */,
+				4BEFA4DD138E7415007002C9 /* pqformat.h */,
+				4BEFA4DE138E7415007002C9 /* pqsignal.h */,
+			);
+			path = libpq;
+			sourceTree = "<group>";
+		};
+		4BEFA4E0138E7415007002C9 /* mb */ = {
+			isa = PBXGroup;
+			children = (
+				4BEFA4E1138E7415007002C9 /* pg_wchar.h */,
+			);
+			path = mb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,9 +343,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BA502C2138A58BD00F2653C /* Build configuration list for PBXNativeTarget "libpq-ios" */;
 			buildPhases = (
-				4B9F8060138BEC6000A9C199 /* Copy Static Library Headers */,
 				4BA5029B138A58BD00F2653C /* Sources */,
 				4BA5029C138A58BD00F2653C /* Frameworks */,
+				4BEFA4F5138E786D007002C9 /* Copy Static Headers */,
+				4BEFA4FC138E78D4007002C9 /* Copy Static Headers subfolder */,
 			);
 			buildRules = (
 			);
