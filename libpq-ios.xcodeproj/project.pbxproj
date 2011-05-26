@@ -138,7 +138,6 @@
 		4BEFA4DC138E7415007002C9 /* pqcomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqcomm.h; sourceTree = "<group>"; };
 		4BEFA4DD138E7415007002C9 /* pqformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqformat.h; sourceTree = "<group>"; };
 		4BEFA4DE138E7415007002C9 /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqsignal.h; sourceTree = "<group>"; };
-		4BEFA4DF138E7415007002C9 /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-ios-Prefix.pch"; sourceTree = "<group>"; };
 		4BEFA4E1138E7415007002C9 /* pg_wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_wchar.h; sourceTree = "<group>"; };
 		4BEFA4E2138E7415007002C9 /* pg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config.h; sourceTree = "<group>"; };
 		4BEFA4E3138E7415007002C9 /* pg_config_manual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_manual.h; sourceTree = "<group>"; };
@@ -296,7 +295,6 @@
 				4BEFA4D0138E7415007002C9 /* c.h */,
 				4BEFA4D1138E7415007002C9 /* getaddrinfo.h */,
 				4BEFA4D2138E7415007002C9 /* libpq */,
-				4BEFA4DF138E7415007002C9 /* libpq-ios-Prefix.pch */,
 				4BEFA4E0138E7415007002C9 /* mb */,
 				4BEFA4E2138E7415007002C9 /* pg_config.h */,
 				4BEFA4E3138E7415007002C9 /* pg_config_manual.h */,
