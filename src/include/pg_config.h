@@ -17,16 +17,16 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* The normal alignment of `double', in bytes. */
-#define ALIGNOF_DOUBLE 8
+#define ALIGNOF_DOUBLE 4
 
 /* The normal alignment of `int', in bytes. */
 #define ALIGNOF_INT 4
 
 /* The normal alignment of `long', in bytes. */
-#define ALIGNOF_LONG 8
+#define ALIGNOF_LONG 4
 
 /* The normal alignment of `long long int', in bytes. */
-/* #undef ALIGNOF_LONG_LONG_INT */
+#define ALIGNOF_LONG_LONG_INT 4
 
 /* The normal alignment of `short', in bytes. */
 #define ALIGNOF_SHORT 2
@@ -67,7 +67,7 @@
 
 /* float8, int8, and related values are passed by value if 'true', by
    reference if 'false' */
-#define FLOAT8PASSBYVAL true
+#define FLOAT8PASSBYVAL false
 
 /* Define to 1 if getpwuid_r() takes a 5th argument. */
 #define GETPWUID_R_5ARG /**/
@@ -145,7 +145,7 @@
 #define HAVE_ERAND48 1
 
 /* Define to 1 if you have the `ERR_set_mark' function. */
-/* #undef HAVE_ERR_SET_MARK */
+#define HAVE_ERR_SET_MARK 1
 
 /* Define to 1 if you have the `fcvt' function. */
 #define HAVE_FCVT 1
@@ -286,7 +286,7 @@
 /* #undef HAVE_LDAP_H */
 
 /* Define to 1 if you have the `crypto' library (-lcrypto). */
-/* #undef HAVE_LIBCRYPTO */
+#define HAVE_LIBCRYPTO 1
 
 /* Define to 1 if you have the `eay32' library (-leay32). */
 /* #undef HAVE_LIBEAY32 */
@@ -310,7 +310,7 @@
 /* #undef HAVE_LIBSELINUX */
 
 /* Define to 1 if you have the `ssl' library (-lssl). */
-/* #undef HAVE_LIBSSL */
+#define HAVE_LIBSSL 1
 
 /* Define to 1 if you have the `ssleay32' library (-lssleay32). */
 /* #undef HAVE_LIBSSLEAY32 */
@@ -329,19 +329,19 @@
 
 /* Define to 1 if constants of type 'long long int' should have the suffix LL.
    */
-/* #undef HAVE_LL_CONSTANTS */
+#define HAVE_LL_CONSTANTS 1
 
 /* Define to 1 if the system has the type `locale_t'. */
 #define HAVE_LOCALE_T 1
 
 /* Define to 1 if `long int' works and is 64 bits. */
-#define HAVE_LONG_INT_64 1
+/* #undef HAVE_LONG_INT_64 */
 
 /* Define to 1 if the system has the type `long long int'. */
 #define HAVE_LONG_LONG_INT 1
 
 /* Define to 1 if `long long int' works and is 64 bits. */
-/* #undef HAVE_LONG_LONG_INT_64 */
+#define HAVE_LONG_LONG_INT_64 1
 
 /* Define to 1 if you have the `memmove' function. */
 #define HAVE_MEMMOVE 1
@@ -667,7 +667,7 @@
 /* #undef HAVE_WINLDAP_H */
 
 /* Define to the appropriate snprintf format for 64-bit ints. */
-#define INT64_FORMAT "%ld"
+#define INT64_FORMAT "%lld"
 
 /* Define to build with Kerberos 5 support. (--with-krb5) */
 /* #undef KRB5 */
@@ -676,7 +676,7 @@
 #define LOCALE_T_IN_XLOCALE 1
 
 /* Define as the maximum alignment requirement of any C data type. */
-#define MAXIMUM_ALIGNOF 8
+#define MAXIMUM_ALIGNOF 4
 
 /* Define bytes to use libc memset(). */
 #define MEMSET_LOOP_LIMIT 1024
@@ -710,7 +710,7 @@
 #define PG_VERSION_NUM 90100
 
 /* A string containing the version number, platform, and C compiler */
-#define PG_VERSION_STR "PostgreSQL 9.1beta1 on x86_64-apple-darwin10.7.0, compiled by i686-apple-darwin10-gcc-4.2.1 (GCC) 4.2.1 (Apple Inc. build 5666) (dot 3), 64-bit"
+#define PG_VERSION_STR "PostgreSQL 9.1beta1 on i386-apple-darwin10.7.0, compiled by i686-apple-darwin10-gcc-4.2.1 (GCC) 4.2.1 (Apple Inc. build 5666) (dot 3), 32-bit"
 
 /* Define to 1 to allow profiling output to be saved separately for each
    process. */
@@ -734,16 +734,16 @@
 #define RELSEG_SIZE 131072
 
 /* The size of `long', as computed by sizeof. */
-#define SIZEOF_LONG 8
+#define SIZEOF_LONG 4
 
 /* The size of `off_t', as computed by sizeof. */
 #define SIZEOF_OFF_T 8
 
 /* The size of `size_t', as computed by sizeof. */
-#define SIZEOF_SIZE_T 8
+#define SIZEOF_SIZE_T 4
 
 /* The size of `void *', as computed by sizeof. */
-#define SIZEOF_VOID_P 8
+#define SIZEOF_VOID_P 4
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -755,7 +755,7 @@
 /* #undef TM_IN_SYS_TIME */
 
 /* Define to the appropriate snprintf format for unsigned 64-bit ints. */
-#define UINT64_FORMAT "%lu"
+#define UINT64_FORMAT "%llu"
 
 /* Define to 1 to build with assertion checks. (--enable-cassert) */
 /* #undef USE_ASSERT_CHECKING */
@@ -769,7 +769,7 @@
 
 /* Define to 1 if you want float8, int8, etc values to be passed by value.
    (--enable-float8-byval) */
-#define USE_FLOAT8_BYVAL 1
+/* #undef USE_FLOAT8_BYVAL */
 
 /* Define to 1 if "static inline" works without unwanted warnings from
    compilations where static inline functions are defined but not called. */
@@ -799,7 +799,7 @@
 /* #undef USE_REPL_SNPRINTF */
 
 /* Define to build with (Open)SSL support. (--with-openssl) */
-/* #undef USE_SSL */
+#define USE_SSL 1
 
 /* Define to select SysV-style semaphores. */
 #define USE_SYSV_SEMAPHORES 1

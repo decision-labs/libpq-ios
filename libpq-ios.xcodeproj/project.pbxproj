@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B9F806E138BED0300A9C199 /* libpq-fs.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB3132B138AA16A00692052 /* libpq-fs.h */; };
 		4B9F806F138BEDE800A9C199 /* libpq-events.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F8138AA0E500692052 /* libpq-events.h */; };
 		4B9F8070138BEDFE00A9C199 /* libpq-fe.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F9138AA0E500692052 /* libpq-fe.h */; };
-		4B9F8071138BEE0C00A9C199 /* pg_config.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB31336138AA16A00692052 /* pg_config.h */; };
-		4B9F8072138BEE1200A9C199 /* pg_config_manual.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB31334138AA16A00692052 /* pg_config_manual.h */; };
-		4B9F8073138BEE2000A9C199 /* pg_config_os.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB31335138AA16A00692052 /* pg_config_os.h */; };
-		4B9F8074138BEE5A00A9C199 /* postgres_ext.h in Copy Static Library Headers */ = {isa = PBXBuildFile; fileRef = 4BB31338138AA16A00692052 /* postgres_ext.h */; };
 		4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
@@ -40,6 +35,8 @@
 		4BB3131F138AA0E500692052 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB31303138AA0E500692052 /* thread.c */; };
 		4BB31320138AA0E500692052 /* wchar.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BB31304138AA0E500692052 /* wchar.c */; };
 		4BB62EE9138AE13F00CD3BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB62EE8138AE13F00CD3BBD /* Foundation.framework */; };
+		4BD8A1EA138E644200280BE3 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD8A1E8138E644200280BE3 /* libssl.a */; };
+		4BD8A1EB138E644200280BE3 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD8A1E9138E644200280BE3 /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +56,8 @@
 			dstPath = Headers;
 			dstSubfolderSpec = 16;
 			files = (
-				4B9F8074138BEE5A00A9C199 /* postgres_ext.h in Copy Static Library Headers */,
-				4B9F8073138BEE2000A9C199 /* pg_config_os.h in Copy Static Library Headers */,
-				4B9F8072138BEE1200A9C199 /* pg_config_manual.h in Copy Static Library Headers */,
-				4B9F8071138BEE0C00A9C199 /* pg_config.h in Copy Static Library Headers */,
 				4B9F8070138BEDFE00A9C199 /* libpq-fe.h in Copy Static Library Headers */,
 				4B9F806F138BEDE800A9C199 /* libpq-events.h in Copy Static Library Headers */,
-				4B9F806E138BED0300A9C199 /* libpq-fs.h in Copy Static Library Headers */,
 			);
 			name = "Copy Static Library Headers";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,30 +99,11 @@
 		4BB31302138AA0E500692052 /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pqsignal.h; path = src/interfaces/libpq/pqsignal.h; sourceTree = SOURCE_ROOT; };
 		4BB31303138AA0E500692052 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = thread.c; path = src/interfaces/libpq/thread.c; sourceTree = SOURCE_ROOT; };
 		4BB31304138AA0E500692052 /* wchar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wchar.c; path = src/interfaces/libpq/wchar.c; sourceTree = SOURCE_ROOT; };
-		4BB31322138AA16A00692052 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = c.h; path = src/include/c.h; sourceTree = SOURCE_ROOT; };
-		4BB31323138AA16A00692052 /* getaddrinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getaddrinfo.h; path = src/include/getaddrinfo.h; sourceTree = SOURCE_ROOT; };
-		4BB31325138AA16A00692052 /* auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
-		4BB31326138AA16A00692052 /* be-fsstubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "be-fsstubs.h"; sourceTree = "<group>"; };
-		4BB31327138AA16A00692052 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		4BB31328138AA16A00692052 /* hba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hba.h; sourceTree = "<group>"; };
-		4BB31329138AA16A00692052 /* ip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ip.h; sourceTree = "<group>"; };
-		4BB3132A138AA16A00692052 /* libpq-be.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-be.h"; sourceTree = "<group>"; };
-		4BB3132B138AA16A00692052 /* libpq-fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libpq-fs.h"; sourceTree = "<group>"; };
-		4BB3132C138AA16A00692052 /* libpq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libpq.h; sourceTree = "<group>"; };
-		4BB3132D138AA16A00692052 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		4BB3132E138AA16A00692052 /* pqcomm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqcomm.h; sourceTree = "<group>"; };
-		4BB3132F138AA16A00692052 /* pqformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqformat.h; sourceTree = "<group>"; };
-		4BB31330138AA16A00692052 /* pqsignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqsignal.h; sourceTree = "<group>"; };
 		4BB31331138AA16A00692052 /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libpq-ios-Prefix.pch"; path = "src/include/libpq-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		4BB31333138AA16A00692052 /* pg_wchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_wchar.h; sourceTree = "<group>"; };
-		4BB31334138AA16A00692052 /* pg_config_manual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pg_config_manual.h; path = src/include/pg_config_manual.h; sourceTree = SOURCE_ROOT; };
-		4BB31335138AA16A00692052 /* pg_config_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pg_config_os.h; path = src/include/pg_config_os.h; sourceTree = SOURCE_ROOT; };
-		4BB31336138AA16A00692052 /* pg_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pg_config.h; path = src/include/pg_config.h; sourceTree = SOURCE_ROOT; };
-		4BB31337138AA16A00692052 /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = port.h; path = src/include/port.h; sourceTree = SOURCE_ROOT; };
-		4BB31338138AA16A00692052 /* postgres_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postgres_ext.h; path = src/include/postgres_ext.h; sourceTree = SOURCE_ROOT; };
-		4BB31339138AA16A00692052 /* postgres_fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postgres_fe.h; path = src/include/postgres_fe.h; sourceTree = SOURCE_ROOT; };
 		4BB31351138AA18800692052 /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
 		4BB62EE8138AE13F00CD3BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BD8A1E8138E644200280BE3 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		4BD8A1E9138E644200280BE3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD8A1EA138E644200280BE3 /* libssl.a in Frameworks */,
+				4BD8A1EB138E644200280BE3 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +150,8 @@
 		4BA502A1138A58BD00F2653C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BD8A1E8138E644200280BE3 /* libssl.a */,
+				4BD8A1E9138E644200280BE3 /* libcrypto.a */,
 				4BB62EE8138AE13F00CD3BBD /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -184,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				4BB31350138AA18800692052 /* port */,
-				4BB31321138AA14C00692052 /* include */,
 				4BB312E7138AA07B00692052 /* interfaces */,
 				4BA502A5138A58BD00F2653C /* Supporting Files */,
 			);
@@ -261,52 +237,6 @@
 			);
 			name = libpq;
 			sourceTree = "<group>";
-		};
-		4BB31321138AA14C00692052 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				4BB31322138AA16A00692052 /* c.h */,
-				4BB31323138AA16A00692052 /* getaddrinfo.h */,
-				4BB31324138AA16A00692052 /* libpq */,
-				4BB31332138AA16A00692052 /* mb */,
-				4BB31334138AA16A00692052 /* pg_config_manual.h */,
-				4BB31335138AA16A00692052 /* pg_config_os.h */,
-				4BB31336138AA16A00692052 /* pg_config.h */,
-				4BB31337138AA16A00692052 /* port.h */,
-				4BB31338138AA16A00692052 /* postgres_ext.h */,
-				4BB31339138AA16A00692052 /* postgres_fe.h */,
-			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		4BB31324138AA16A00692052 /* libpq */ = {
-			isa = PBXGroup;
-			children = (
-				4BB31325138AA16A00692052 /* auth.h */,
-				4BB31326138AA16A00692052 /* be-fsstubs.h */,
-				4BB31327138AA16A00692052 /* crypt.h */,
-				4BB31328138AA16A00692052 /* hba.h */,
-				4BB31329138AA16A00692052 /* ip.h */,
-				4BB3132A138AA16A00692052 /* libpq-be.h */,
-				4BB3132B138AA16A00692052 /* libpq-fs.h */,
-				4BB3132C138AA16A00692052 /* libpq.h */,
-				4BB3132D138AA16A00692052 /* md5.h */,
-				4BB3132E138AA16A00692052 /* pqcomm.h */,
-				4BB3132F138AA16A00692052 /* pqformat.h */,
-				4BB31330138AA16A00692052 /* pqsignal.h */,
-			);
-			name = libpq;
-			path = src/include/libpq;
-			sourceTree = SOURCE_ROOT;
-		};
-		4BB31332138AA16A00692052 /* mb */ = {
-			isa = PBXGroup;
-			children = (
-				4BB31333138AA16A00692052 /* pg_wchar.h */,
-			);
-			name = mb;
-			path = src/include/mb;
-			sourceTree = SOURCE_ROOT;
 		};
 		4BB31350138AA18800692052 /* port */ = {
 			isa = PBXGroup;
@@ -506,6 +436,11 @@
 					"FRONTEND=1",
 					"UNSAFE_STAT_OK=1",
 				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = pq;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -523,6 +458,11 @@
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
 					"FRONTEND=1",
 					"UNSAFE_STAT_OK=1",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = pq;
