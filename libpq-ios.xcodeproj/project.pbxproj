@@ -433,7 +433,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = pq;
 				USER_HEADER_SEARCH_PATHS = "";
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include $(SRCROOT)/src/port";
 			};
 			name = Debug;
 		};
@@ -455,7 +455,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = pq;
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/src/include $(SRCROOT)/src/port";
 			};
 			name = Release;
 		};
