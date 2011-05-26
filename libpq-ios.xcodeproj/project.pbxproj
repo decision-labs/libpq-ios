@@ -100,7 +100,6 @@
 		4BB31303138AA0E500692052 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = thread.c; path = src/interfaces/libpq/thread.c; sourceTree = SOURCE_ROOT; };
 		4BB31304138AA0E500692052 /* wchar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wchar.c; path = src/interfaces/libpq/wchar.c; sourceTree = SOURCE_ROOT; };
 		4BB31331138AA16A00692052 /* libpq-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "libpq-ios-Prefix.pch"; path = "src/include/libpq-ios-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		4BB31351138AA18800692052 /* pg_config_paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pg_config_paths.h; sourceTree = "<group>"; };
 		4BB62EE8138AE13F00CD3BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BD8A1E8138E644200280BE3 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		4BD8A1E9138E644200280BE3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
@@ -160,7 +159,6 @@
 		4BA502A4138A58BD00F2653C /* src */ = {
 			isa = PBXGroup;
 			children = (
-				4BB31350138AA18800692052 /* port */,
 				4BB312E7138AA07B00692052 /* interfaces */,
 				4BA502A5138A58BD00F2653C /* Supporting Files */,
 			);
@@ -237,15 +235,6 @@
 			);
 			name = libpq;
 			sourceTree = "<group>";
-		};
-		4BB31350138AA18800692052 /* port */ = {
-			isa = PBXGroup;
-			children = (
-				4BB31351138AA18800692052 /* pg_config_paths.h */,
-			);
-			name = port;
-			path = src/port;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
