@@ -506,9 +506,6 @@
 /* Define to 1 if the system has the type `struct cmsgcred'. */
 /* #undef HAVE_STRUCT_CMSGCRED */
 
-/* Define to 1 if the system has the type `struct fcred'. */
-/* #undef HAVE_STRUCT_FCRED */
-
 /* Define to 1 if the system has the type `struct option'. */
 #define HAVE_STRUCT_OPTION 1
 
@@ -532,9 +529,6 @@
 
 /* Define to 1 if the system has the type `struct sockaddr_un'. */
 #define HAVE_STRUCT_SOCKADDR_UN 1
-
-/* Define to 1 if the system has the type `struct sockcred'. */
-/* #undef HAVE_STRUCT_SOCKCRED */
 
 /* Define to 1 if `tm_zone' is member of `struct tm'. */
 #define HAVE_STRUCT_TM_TM_ZONE 1
@@ -592,6 +586,9 @@
 
 /* Define to 1 if you have the <sys/types.h> header file. */
 #define HAVE_SYS_TYPES_H 1
+
+/* Define to 1 if you have the <sys/ucred.h> header file. */
+#define HAVE_SYS_UCRED_H 1
 
 /* Define to 1 if you have the <sys/un.h> header file. */
 #define HAVE_SYS_UN_H 1
